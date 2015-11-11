@@ -4,7 +4,7 @@ var fs = require('fs');
 var amqp = require('amqplib');
 
 
-mongoose.connect('mongodb://woAdmin:password12345@socpub.cloudapp.net/twitter_soton');
+mongoose.connect('mongodb://username:password@serveraddress/twitter_soton');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function (callback) {
